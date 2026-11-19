@@ -134,8 +134,9 @@ details summary{cursor:pointer;font-weight:500;color:var(--ink2)}
   <section class="panel" id="p-impor" hidden></section>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script>
+import * as XLSX from "xlsx";
+
 (function(){
 const $=s=>document.querySelector(s);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
